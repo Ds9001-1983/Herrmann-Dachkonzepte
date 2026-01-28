@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leistungen von Herrmann Dachkonzepte: Carports, Anbauten, Vordächer, Fassadenverkleidung, Metallfassaden, Balkon & Terrasse, Sturmschäden, Dachfenster und mehr in Wiehl.">
+    <meta name="keywords" content="Carport Wiehl, Anbau Wiehl, Vordach Nümbrecht, Fassadenverkleidung Oberberg, Metallfassade, Balkon Terrasse, Sturmschaden Reparatur, Dachfenster, Dachrinnen, Holzrahmenbau">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Leistungen - Herrmann Dachkonzepte">
+    <meta property="og:description" content="Unser Leistungsspektrum: Carports, Anbauten, Vordächer, Fassaden und vieles mehr.">
+    <meta property="og:image" content="assets/images/logo.png">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <title>Leistungen | Herrmann Dachkonzepte - Carports, Anbauten, Fassaden & mehr</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .service-section {
+            padding: 5rem 0;
+            scroll-margin-top: 100px;
+        }
+        .service-section:nth-child(even) {
+            background: var(--color-light);
+        }
+        .service-content {
+            display: grid;
+            gap: 3rem;
+            align-items: center;
+        }
+        @media (min-width: 992px) {
+            .service-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .service-content.reverse {
+                direction: rtl;
+            }
+            .service-content.reverse > * {
+                direction: ltr;
+            }
+        }
+        .service-text h2 {
+            margin-bottom: 1rem;
+        }
+        .service-text p {
+            color: var(--color-text-light);
+            margin-bottom: 1rem;
+        }
+        .service-features {
+            margin-top: 1.5rem;
+        }
+        .service-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+        }
+        .service-features li i {
+            color: var(--color-accent);
+            margin-top: 4px;
+        }
+        .service-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        .service-placeholder {
+            aspect-ratio: 4/3;
+            background: var(--gradient-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+        }
+        .service-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        .service-placeholder span {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            opacity: 0.5;
+        }
+        .services-overview {
+            padding: 3rem 0;
+            background: var(--color-light);
+        }
+        .overview-grid {
+            display: grid;
+            gap: 1rem;
+        }
+        @media (min-width: 576px) {
+            .overview-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .overview-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .overview-item {
+            background: var(--color-white);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: all var(--transition-normal);
+        }
+        .overview-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .overview-item i {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-bottom: 0.75rem;
+        }
+        .overview-item h4 {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .overview-item a {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo">
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Startseite</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="leistungen.html" class="nav-link active">Leistungen</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                    <li><a href="kontakt.html#termin" class="nav-link btn-nav">Termin vereinbaren</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Unsere Leistungen</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Startseite</a>
+                <span>/</span>
+                <span>Leistungen</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-item">
+                    <a href="#carport">
+                        <i class="fas fa-warehouse"></i>
+                        <h4>Carports</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#anbauten">
+                        <i class="fas fa-building"></i>
+                        <h4>Anbauten</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#vordaecher">
+                        <i class="fas fa-umbrella"></i>
+                        <h4>Vordächer</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#fassade">
+                        <i class="fas fa-th-large"></i>
+                        <h4>Fassadenverkleidung</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#metallfassaden">
+                        <i class="fas fa-layer-group"></i>
+                        <h4>Metallfassaden</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#balkon">
+                        <i class="fas fa-couch"></i>
+                        <h4>Balkon & Terrasse</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#weitere">
+                        <i class="fas fa-tools"></i>
+                        <h4>Weitere Leistungen</h4>
+                    </a>
+                </div>
+                <div class="overview-item">
+                    <a href="#holzrahmenbau">
+                        <i class="fas fa-home"></i>
+                        <h4>Holzrahmenbau</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carport Section -->
+    <section class="service-section" id="carport">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text" data-aos="fade-right">
+                    <span class="section-badge">Fahrzeugschutz</span>
+                    <h2>Carports</h2>
+                    <p>Ein Carport schützt Ihr Fahrzeug zuverlässig vor Witterungseinflüssen und wertet gleichzeitig Ihr Grundstück optisch auf. Wir planen und bauen Carports individuell nach Ihren Wünschen und den Gegebenheiten vor Ort.</p>
+                    <p>Ob freistehend oder als Anbau, mit Flachdach oder Satteldach, in Holz oder mit Metallkonstruktion – wir finden die perfekte Lösung für Sie. Unsere Carports vereinen Funktionalität mit ansprechendem Design.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Individuelle Planung und Maßanfertigung</li>
+                        <li><i class="fas fa-check"></i> Verschiedene Dachformen möglich</li>
+                        <li><i class="fas fa-check"></i> Hochwertige Materialien für lange Lebensdauer</li>
+                        <li><i class="fas fa-check"></i> Optionale Erweiterungen (Abstellraum, Werkstatt)</li>
+                        <li><i class="fas fa-check"></i> Komplette Abwicklung inkl. Genehmigung</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <div class="service-placeholder">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Carport Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anbauten Section -->
+    <section class="service-section" id="anbauten">
+        <div class="container">
+            <div class="service-content reverse">
+                <div class="service-text" data-aos="fade-left">
+                    <span class="section-badge">Wohnraumerweiterung</span>
+                    <h2>Anbauten</h2>
+                    <p>Sie benötigen mehr Platz? Mit einem professionellen Anbau schaffen wir zusätzlichen Wohnraum, der sich harmonisch in Ihr bestehendes Gebäude einfügt. Von der Planung über die Konstruktion bis zur Dacheindeckung erhalten Sie bei uns alles aus einer Hand.</p>
+                    <p>Durch unsere Kombination aus Dachdeckerei und Zimmerei können wir Anbauten von der Holzkonstruktion bis zur fertigen Bedachung komplett selbst ausführen – für optimale Ergebnisse ohne Schnittstellenprobleme.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Komplette Holzrahmenbau-Konstruktion</li>
+                        <li><i class="fas fa-check"></i> Perfekte Integration ins Bestandsgebäude</li>
+                        <li><i class="fas fa-check"></i> Energieeffiziente Bauweise möglich</li>
+                        <li><i class="fas fa-check"></i> Dacheindeckung nach Wunsch</li>
+                        <li><i class="fas fa-check"></i> Beratung zu Baugenehmigungen</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-right">
+                    <div class="service-placeholder">
+                        <i class="fas fa-building"></i>
+                        <span>Anbau Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vordächer Section -->
+    <section class="service-section" id="vordaecher">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text" data-aos="fade-right">
+                    <span class="section-badge">Eingangsschutz</span>
+                    <h2>Vordächer</h2>
+                    <p>Ein Vordach schützt nicht nur vor Regen und Schnee, sondern ist auch die Visitenkarte Ihres Hauses. Wir fertigen individuelle Vordächer, die funktional und optisch überzeugen.</p>
+                    <p>Von klassischen Holzkonstruktionen bis zu modernen Designs mit Glas oder Metall – wir setzen Ihre Vorstellungen um. Jedes Vordach wird passgenau für Ihren Eingangsbereich gefertigt.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Individuelle Designs nach Ihren Wünschen</li>
+                        <li><i class="fas fa-check"></i> Verschiedene Materialien (Holz, Metall, Glas)</li>
+                        <li><i class="fas fa-check"></i> Wetterbeständige Ausführung</li>
+                        <li><i class="fas fa-check"></i> Passend zum Baustil Ihres Hauses</li>
+                        <li><i class="fas fa-check"></i> Fachgerechte Montage</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <div class="service-placeholder">
+                        <i class="fas fa-umbrella"></i>
+                        <span>Vordach Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fassadenverkleidung Section -->
+    <section class="service-section" id="fassade">
+        <div class="container">
+            <div class="service-content reverse">
+                <div class="service-text" data-aos="fade-left">
+                    <span class="section-badge">Gebäudeschutz</span>
+                    <h2>Fassadenverkleidung</h2>
+                    <p>Eine professionelle Fassadenverkleidung schützt Ihr Gebäude vor Witterungseinflüssen und verbessert gleichzeitig die Energieeffizienz. Zudem verleiht sie Ihrem Haus ein modernes, gepflegtes Erscheinungsbild.</p>
+                    <p>Wir bieten Ihnen verschiedene Materialien und Gestaltungsmöglichkeiten – von klassischer Holzfassade bis zu modernen Verbundplatten. Lassen Sie sich beraten, welche Lösung optimal zu Ihrem Gebäude passt.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Holzfassaden in verschiedenen Ausführungen</li>
+                        <li><i class="fas fa-check"></i> Moderne Verbundplatten</li>
+                        <li><i class="fas fa-check"></i> Hinterlüftete Fassadensysteme</li>
+                        <li><i class="fas fa-check"></i> Verbesserung der Wärmedämmung</li>
+                        <li><i class="fas fa-check"></i> Langlebiger Witterungsschutz</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-right">
+                    <div class="service-placeholder">
+                        <i class="fas fa-th-large"></i>
+                        <span>Fassade Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metallfassaden Section -->
+    <section class="service-section" id="metallfassaden">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text" data-aos="fade-right">
+                    <span class="section-badge">Moderne Optik</span>
+                    <h2>Metallfassaden</h2>
+                    <p>Metallfassaden überzeugen durch ihre Langlebigkeit, den geringen Wartungsaufwand und ihre moderne Ästhetik. Sie eignen sich hervorragend für Gewerbegebäude, Industriehallen aber auch für private Wohnhäuser mit zeitgemäßem Design.</p>
+                    <p>Wir verarbeiten hochwertige Metallfassaden-Systeme, die optimalen Schutz bieten und gleichzeitig architektonische Akzente setzen.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Extrem langlebig und pflegeleicht</li>
+                        <li><i class="fas fa-check"></i> Große Farbauswahl</li>
+                        <li><i class="fas fa-check"></i> Moderne, zeitlose Optik</li>
+                        <li><i class="fas fa-check"></i> Für Gewerbe und Privat</li>
+                        <li><i class="fas fa-check"></i> Professionelle Verarbeitung</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <div class="service-placeholder">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Metallfassade Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balkon & Terrasse Section -->
+    <section class="service-section" id="balkon">
+        <div class="container">
+            <div class="service-content reverse">
+                <div class="service-text" data-aos="fade-left">
+                    <span class="section-badge">Lebensqualität</span>
+                    <h2>Balkon & Terrasse</h2>
+                    <p>Erweitern Sie Ihren Wohnraum ins Freie! Wir planen und bauen Balkone und Terrassen, die zu echten Wohlfühloasen werden. Von der tragenden Holzkonstruktion bis zur Überdachung bieten wir Komplettlösungen.</p>
+                    <p>Ob ein neuer Balkon am Bestandsgebäude oder eine überdachte Terrasse – wir schaffen Räume zum Entspannen und Genießen.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Balkone aus Holz oder mit Stahlkonstruktion</li>
+                        <li><i class="fas fa-check"></i> Terrassenüberdachungen</li>
+                        <li><i class="fas fa-check"></i> Individuelle Größen und Formen</li>
+                        <li><i class="fas fa-check"></i> Integration von Geländern und Verglasungen</li>
+                        <li><i class="fas fa-check"></i> Statische Berechnung und Planung</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-right">
+                    <div class="service-placeholder">
+                        <i class="fas fa-couch"></i>
+                        <span>Balkon Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weitere Leistungen Section -->
+    <section class="service-section" id="weitere">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Mehr Service</span>
+                <h2>Weitere Leistungen</h2>
+                <p class="section-subtitle">Neben unseren Hauptleistungen bieten wir Ihnen weitere wichtige Services rund ums Dach.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Sturmausbesserung</h3>
+                    <p>Schnelle und professionelle Hilfe bei Sturmschäden. Wir reparieren abgedeckte Dächer, ersetzen beschädigte Ziegel und sichern Ihr Dach wieder ab.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <h3>Dachfenster</h3>
+                    <p>Einbau und Austausch von Dachfenstern aller führenden Hersteller. Mehr Licht und frische Luft für Ihr Dachgeschoss.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Dachrinnen</h3>
+                    <p>Installation, Reparatur und Austausch von Dachrinnen und Fallrohren. Wir sorgen für eine zuverlässige Dachentwässerung.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Blecharbeiten</h3>
+                    <p>Professionelle Blecharbeiten für Ihr Dach: Verwahrungen, Rinnen, Fallrohre und Sonderanfertigungen aus verschiedenen Metallen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Holzrahmenbau Section -->
+    <section class="service-section bg-light" id="holzrahmenbau">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text" data-aos="fade-right">
+                    <span class="section-badge">Unser Spezialgebiet</span>
+                    <h2>Holzrahmenbau</h2>
+                    <p>Der Holzrahmenbau ist eine unserer Kernkompetenzen. Mit unserem eigenen Zimmermannsmeister verfügen wir über das Know-how und die Erfahrung, um anspruchsvolle Holzkonstruktionen fachgerecht zu planen und umzusetzen.</p>
+                    <p>Der Holzrahmenbau bietet viele Vorteile: schnelle Bauzeit, hervorragende Wärmedämmung, nachhaltiger Baustoff und vielfältige Gestaltungsmöglichkeiten. Ob Anbau, Aufstockung oder Neubau – wir setzen Ihr Projekt professionell um.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Eigener Zimmermannsmeister im Team</li>
+                        <li><i class="fas fa-check"></i> Nachhaltiger Baustoff Holz</li>
+                        <li><i class="fas fa-check"></i> Hervorragende Dämmeigenschaften</li>
+                        <li><i class="fas fa-check"></i> Kurze Bauzeiten durch Vorfertigung</li>
+                        <li><i class="fas fa-check"></i> Komplettleistung von Konstruktion bis Dach</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-primary mt-lg">
+                        <i class="fas fa-calendar-check"></i> Beratung anfragen
+                    </a>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <div class="service-placeholder">
+                        <i class="fas fa-home"></i>
+                        <span>Holzrahmenbau Referenzbild</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ihr Projekt - Unsere Expertise</h2>
+                <p>Haben Sie Fragen zu unseren Leistungen oder möchten Sie ein konkretes Projekt besprechen? Kontaktieren Sie uns für eine unverbindliche Beratung.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+4915122142057" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i> Jetzt anrufen
+                    </a>
+                    <a href="kontakt.html" class="btn btn-white">
+                        <i class="fas fa-envelope"></i> Anfrage senden
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
+                    <p>Profis am Dach und im Holzrahmenbau. Ihr zuverlässiger Partner für Dachdeckerarbeiten und Zimmererarbeiten in Wiehl und Umgebung.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/herrmann_dachkonzepte/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="#carport">Carports</a></li>
+                        <li><a href="#anbauten">Anbauten</a></li>
+                        <li><a href="#vordaecher">Vordächer</a></li>
+                        <li><a href="#fassade">Fassadenverkleidung</a></li>
+                        <li><a href="#balkon">Balkon & Terrasse</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Römerstraße 23<br>51674 Wiehl-Hübender</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+4915122142057">01512 2142057</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@herrmann-dachkonzepte.de">info@herrmann-dachkonzepte.de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+                <p>&copy; 2025 Herrmann Dachkonzepte. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/4915122142057?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat starten</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

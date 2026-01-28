@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktieren Sie Herrmann Dachkonzepte in Wiehl - Telefon, E-Mail, Adresse und Kontaktformular. Kostenlose Beratung für Ihr Dachprojekt.">
+    <meta name="keywords" content="Kontakt Herrmann Dachkonzepte, Dachdecker Wiehl Kontakt, Termin Dachdeckerei, Anfahrt Wiehl">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Kontakt - Herrmann Dachkonzepte">
+    <meta property="og:description" content="Kontaktieren Sie uns für eine kostenlose Beratung. Wir sind für Sie da!">
+    <meta property="og:image" content="assets/images/logo.png">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <title>Kontakt | Herrmann Dachkonzepte - Beratung & Terminvereinbarung</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-section {
+            padding: 5rem 0;
+        }
+        .contact-grid {
+            display: grid;
+            gap: 3rem;
+        }
+        @media (min-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1.2fr;
+            }
+        }
+        .contact-info-card {
+            background: var(--gradient-primary);
+            color: var(--color-white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            height: fit-content;
+        }
+        .contact-info-card h2 {
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+        .contact-info-card > p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        .contact-detail {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-detail i {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .contact-detail-text h4 {
+            color: var(--color-white);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+            opacity: 0.8;
+        }
+        .contact-detail-text p,
+        .contact-detail-text a {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--color-white);
+            margin: 0;
+        }
+        .contact-detail-text a:hover {
+            color: var(--color-accent);
+        }
+        .contact-hours {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 2rem;
+        }
+        .contact-hours h4 {
+            color: var(--color-white);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+        .hours-row span:first-child {
+            opacity: 0.8;
+        }
+        .contact-social {
+            display: flex;
+            gap: 1rem;
+        }
+        .contact-social a {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: all var(--transition-fast);
+        }
+        .contact-social a:hover {
+            background: var(--color-accent);
+            transform: translateY(-3px);
+        }
+        .contact-form {
+            background: var(--color-white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        .contact-form h2 {
+            margin-bottom: 0.5rem;
+        }
+        .contact-form > p {
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
+        }
+        .form-row {
+            display: grid;
+            gap: 1rem;
+        }
+        @media (min-width: 576px) {
+            .form-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .map-section {
+            padding: 0 0 5rem;
+        }
+        .map-container {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        .emergency-section {
+            background: var(--color-light);
+            padding: 4rem 0;
+        }
+        .emergency-box {
+            background: linear-gradient(135deg, #dc3545 0%, #a71d2a 100%);
+            color: var(--color-white);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+        .emergency-box i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .emergency-box h2 {
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+        .emergency-box p {
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .emergency-box .btn {
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo">
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Startseite</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+                    <li><a href="kontakt.html#termin" class="nav-link btn-nav">Termin vereinbaren</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Startseite</a>
+                <span>/</span>
+                <span>Kontakt</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="termin">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-card" data-aos="fade-right">
+                    <h2>Sprechen Sie mit uns</h2>
+                    <p>Wir freuen uns auf Ihre Anfrage! Kontaktieren Sie uns telefonisch, per E-Mail oder nutzen Sie unser Kontaktformular.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-detail-text">
+                                <h4>Telefon</h4>
+                                <a href="tel:+4915122142057">01512 2142057</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-detail-text">
+                                <h4>E-Mail</h4>
+                                <a href="mailto:info@herrmann-dachkonzepte.de">info@herrmann-dachkonzepte.de</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-detail-text">
+                                <h4>Adresse</h4>
+                                <p>Römerstraße 23<br>51674 Wiehl-Hübender</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h4><i class="fas fa-clock"></i> Öffnungszeiten</h4>
+                        <div class="hours-row">
+                            <span>Montag - Freitag</span>
+                            <span>07:00 - 17:00 Uhr</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Samstag</span>
+                            <span>Nach Vereinbarung</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Sonntag</span>
+                            <span>Geschlossen</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/herrmann_dachkonzepte/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/4915122142057" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-left">
+                    <h2>Nachricht senden</h2>
+                    <p>Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
+
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ihr Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="01234 567890">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <select id="subject" name="subject">
+                                <option value="">Bitte wählen...</option>
+                                <option value="beratung">Kostenlose Beratung</option>
+                                <option value="angebot">Angebot anfragen</option>
+                                <option value="termin">Termin vereinbaren</option>
+                                <option value="sturmschaden">Sturmschaden / Notfall</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Ihre Nachricht *</label>
+                            <textarea id="message" name="message" required placeholder="Beschreiben Sie Ihr Anliegen..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zu. *</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Nachricht senden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Anfahrt</span>
+                <h2>So finden Sie uns</h2>
+                <p class="section-subtitle">Römerstraße 23, 51674 Wiehl-Hübender - Im Herzen des Oberbergischen Kreises</p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.3724774392717!2d7.544932376892665!3d50.9492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bed5a6c47bc1e1%3A0x0!2sR%C3%B6merstra%C3%9Fe%2023%2C%2051674%20Wiehl!5e0!3m2!1sde!2sde!4v1680000000000!5m2!1sde!2sde"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Standort Herrmann Dachkonzepte">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-box" data-aos="fade-up">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Sturmschaden? Dach undicht?</h2>
+                <p>Bei dringenden Notfällen sind wir für Sie da! Rufen Sie uns an und wir kümmern uns schnellstmöglich um Ihr Problem.</p>
+                <a href="tel:+4915122142057" class="btn btn-white">
+                    <i class="fas fa-phone-alt"></i> Notfall-Hotline: 01512 2142057
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
+                    <p>Profis am Dach und im Holzrahmenbau. Ihr zuverlässiger Partner für Dachdeckerarbeiten und Zimmererarbeiten in Wiehl und Umgebung.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/herrmann_dachkonzepte/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="leistungen.html#carport">Carports</a></li>
+                        <li><a href="leistungen.html#anbauten">Anbauten</a></li>
+                        <li><a href="leistungen.html#vordaecher">Vordächer</a></li>
+                        <li><a href="leistungen.html#fassade">Fassadenverkleidung</a></li>
+                        <li><a href="leistungen.html#balkon">Balkon & Terrasse</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Römerstraße 23<br>51674 Wiehl-Hübender</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+4915122142057">01512 2142057</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@herrmann-dachkonzepte.de">info@herrmann-dachkonzepte.de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+                <p>&copy; 2025 Herrmann Dachkonzepte. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/4915122142057?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat starten</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
