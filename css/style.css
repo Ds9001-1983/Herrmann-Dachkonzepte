@@ -6,11 +6,11 @@
 
 /* ===== CSS Variables ===== */
 :root {
-    /* Colors - Based on Logo */
+    /* Colors - Unternehmensfarben */
     --color-primary: #1a1a1a;
     --color-secondary: #555555;
-    --color-accent: #c9a227;
-    --color-accent-dark: #a88820;
+    --color-accent: #2ea3f2;
+    --color-accent-dark: #1a8cd8;
     --color-white: #ffffff;
     --color-light: #f8f9fa;
     --color-gray-light: #e9ecef;
@@ -152,12 +152,12 @@ p {
 .btn-primary {
     background: var(--gradient-accent);
     color: var(--color-white);
-    box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+    box-shadow: 0 4px 15px rgba(46, 163, 242, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
+    box-shadow: 0 6px 20px rgba(46, 163, 242, 0.4);
 }
 
 .btn-secondary {
@@ -1319,7 +1319,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
+    box-shadow: 0 0 0 3px rgba(46, 163, 242, 0.1);
 }
 
 .form-group textarea {
