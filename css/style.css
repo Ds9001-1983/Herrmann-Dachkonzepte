@@ -1864,6 +1864,22 @@ section {
     margin: 0;
 }
 
+.footer-bottom .made-by {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin-top: 0.5rem;
+}
+
+.footer-bottom .made-by a {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.footer-bottom .made-by a:hover {
+    color: var(--color-accent);
+}
+
 /* ===== 17. Fixed Elements ===== */
 /* WhatsApp Button */
 .whatsapp-btn {
