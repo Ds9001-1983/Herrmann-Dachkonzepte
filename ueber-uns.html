@@ -9,24 +9,29 @@
 
     <meta property="og:title" content="Über uns - Herrmann Dachkonzepte">
     <meta property="og:description" content="Lernen Sie uns kennen: Dachdeckermeister und Zimmermannsmeister aus Wiehl mit Leidenschaft für Qualität.">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="assets/images/logo.webp">
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.webp">
     <title>Über uns | Herrmann Dachkonzepte - Philosophie & Geschichte</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo">
                 </a>
 
                 <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
@@ -36,14 +41,36 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Startseite</a></li>
                     <li><a href="ueber-uns.html" class="nav-link active">Über uns</a></li>
-                    <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+                    <li class="nav-dropdown">
+                        <a href="leistungen.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Leistungen <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="carport.html" class="nav-link">Carports</a></li>
+                            <li><a href="anbauten.html" class="nav-link">Anbauten</a></li>
+                            <li><a href="vordaecher.html" class="nav-link">Vordächer</a></li>
+                            <li><a href="fassadenverkleidung.html" class="nav-link">Fassadenverkleidung</a></li>
+                            <li><a href="metallfassaden.html" class="nav-link">Metallfassaden</a></li>
+                            <li><a href="balkon-terrasse.html" class="nav-link">Balkon & Terrasse</a></li>
+                            <li><a href="leistungen.html" class="nav-link">Alle Leistungen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projekte.html" class="nav-link">Projekte</a></li>
+                    <li class="nav-dropdown">
+                        <a href="partner.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Partner <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="prefa.html" class="nav-link">PREFA</a></li>
+                            <li><a href="triflex.html" class="nav-link">Triflex</a></li>
+                            <li><a href="creaton.html" class="nav-link">CREATON</a></li>
+                            <li><a href="isocell.html" class="nav-link">ISOCELL</a></li>
+                        </ul>
+                    </li>
                     <li><a href="team.html" class="nav-link">Team</a></li>
-                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-                    <li><a href="kontakt.html#termin" class="nav-link btn-nav">Termin vereinbaren</a></li>
+                    <li><a href="kontakt.html" class="nav-link btn-nav">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <main id="main-content">
 
     <!-- Page Header -->
     <section class="page-header">
@@ -61,19 +88,16 @@
     <section class="content-section">
         <div class="container">
             <div class="content-grid">
-                <div class="content-text" data-aos="fade-right">
+                <div class="content-text" data-reveal="right">
                     <span class="section-badge">Unsere Philosophie</span>
                     <h2>Profis am Dach und im Holzrahmenbau</h2>
                     <p>Bei Herrmann Dachkonzepte vereinen wir zwei traditionsreiche Handwerke unter einem Dach: Dachdeckerei und Zimmerei. Diese einzigartige Kombination ermöglicht es uns, Ihnen Komplettlösungen aus einer Hand zu bieten – von der Planung bis zur Fertigstellung.</p>
                     <p>Unser Anspruch ist es, für jedes Projekt die bestmögliche Lösung zu finden. Dabei setzen wir auf bewährte Handwerkstradition gepaart mit modernen Techniken und Materialien. Qualität, Zuverlässigkeit und Kundenzufriedenheit stehen bei uns an erster Stelle.</p>
                     <p>Als regional verwurzelter Meisterbetrieb kennen wir die Anforderungen an Dächer in unserer Region. Wind, Wetter und die örtlichen Gegebenheiten sind uns bestens vertraut – dieses Wissen fließt in jedes unserer Projekte ein.</p>
                 </div>
-                <div class="content-image" data-aos="fade-left">
+                <div class="content-image" data-reveal="left">
                     <div class="image-wrapper">
-                        <div class="image-placeholder">
-                            <i class="fas fa-handshake"></i>
-                            <span>Vertrauen & Qualität</span>
-                        </div>
+                        <img src="assets/images/downloaded/projekt2.webp" alt="Herrmann Dachkonzepte Projektarbeit" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -89,52 +113,58 @@
                 <p class="section-subtitle">Unsere Arbeit basiert auf festen Grundsätzen, die uns täglich antreiben.</p>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
+            <div class="values-grid">
+                <div class="values-card" data-reveal="up">
+                    <span class="values-card-number">01</span>
                     <div class="service-icon">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3>Meisterliche Qualität</h3>
+                    <h4>Meisterliche Qualität</h4>
                     <p>Als Meisterbetrieb garantieren wir höchste handwerkliche Qualität. Jede Arbeit wird mit Präzision und Sorgfalt ausgeführt – für Ergebnisse, die Bestand haben.</p>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="values-card" data-reveal="up" data-reveal-delay="100">
+                    <span class="values-card-number">02</span>
                     <div class="service-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Persönliche Beratung</h3>
+                    <h4>Persönliche Beratung</h4>
                     <p>Wir nehmen uns Zeit für Sie. Von der ersten Beratung bis zur Fertigstellung sind wir Ihr persönlicher Ansprechpartner und begleiten Sie durch jede Phase des Projekts.</p>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="values-card" data-reveal="up" data-reveal-delay="200">
+                    <span class="values-card-number">03</span>
                     <div class="service-icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Zuverlässigkeit</h3>
+                    <h4>Zuverlässigkeit</h4>
                     <p>Pünktlichkeit und Termintreue sind für uns selbstverständlich. Wir halten, was wir versprechen – bei Terminen, Kosten und Qualität.</p>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="values-card" data-reveal="up" data-reveal-delay="300">
+                    <span class="values-card-number">04</span>
                     <div class="service-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Nachhaltigkeit</h3>
+                    <h4>Nachhaltigkeit</h4>
                     <p>Wir arbeiten mit hochwertigen, langlebigen Materialien und achten auf nachhaltige Lösungen, die Ihr Gebäude für Generationen schützen.</p>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="values-card" data-reveal="up" data-reveal-delay="400">
+                    <span class="values-card-number">05</span>
                     <div class="service-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>Regionale Verbundenheit</h3>
+                    <h4>Regionale Verbundenheit</h4>
                     <p>Als Betrieb aus Wiehl sind wir in der Region verwurzelt. Kurze Wege bedeuten schnelle Reaktionszeiten und persönlichen Service vor Ort.</p>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="values-card" data-reveal="up" data-reveal-delay="500">
+                    <span class="values-card-number">06</span>
                     <div class="service-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
-                    <h3>Alles aus einer Hand</h3>
+                    <h4>Alles aus einer Hand</h4>
                     <p>Dachdeckerarbeiten und Zimmererarbeiten perfekt aufeinander abgestimmt. Ein Ansprechpartner, ein Konzept, eine Lösung für Ihr Projekt.</p>
                 </div>
             </div>
@@ -145,7 +175,7 @@
     <section class="content-section">
         <div class="container">
             <div class="content-grid reverse">
-                <div class="content-text" data-aos="fade-left">
+                <div class="content-text" data-reveal="left">
                     <span class="section-badge">Warum wir?</span>
                     <h2>Dachdeckerbetrieb mit eigenem Zimmermannsmeister</h2>
                     <p>Was uns besonders macht? Die Kombination zweier Handwerksberufe unter einem Dach. Während andere Betriebe für komplexe Projekte verschiedene Gewerke koordinieren müssen, bieten wir Ihnen alles aus einer Hand.</p>
@@ -193,12 +223,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-image" data-aos="fade-right">
+                <div class="content-image" data-reveal="right">
                     <div class="image-wrapper">
-                        <div class="image-placeholder">
-                            <i class="fas fa-home"></i>
-                            <span>Zwei Gewerke - Eine Lösung</span>
-                        </div>
+                        <img src="assets/images/downloaded/projekt4.webp" alt="Dachdecker und Zimmererarbeiten" loading="lazy">
                     </div>
                     <div class="experience-badge">
                         <span class="number">2in1</span>
@@ -229,11 +256,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
                     <p>Profis am Dach und im Holzrahmenbau. Ihr zuverlässiger Partner für Dachdeckerarbeiten und Zimmererarbeiten in Wiehl und Umgebung.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
@@ -251,7 +280,10 @@
                         <li><a href="index.html">Startseite</a></li>
                         <li><a href="ueber-uns.html">Über uns</a></li>
                         <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="projekte.html">Projekte</a></li>
+                        <li><a href="partner.html">Partner</a></li>
                         <li><a href="team.html">Team</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -259,11 +291,12 @@
                 <div class="footer-links">
                     <h4>Leistungen</h4>
                     <ul>
-                        <li><a href="leistungen.html#carport">Carports</a></li>
-                        <li><a href="leistungen.html#anbauten">Anbauten</a></li>
-                        <li><a href="leistungen.html#vordaecher">Vordächer</a></li>
-                        <li><a href="leistungen.html#fassade">Fassadenverkleidung</a></li>
-                        <li><a href="leistungen.html#balkon">Balkon & Terrasse</a></li>
+                        <li><a href="carport.html">Carports</a></li>
+                        <li><a href="anbauten.html">Anbauten</a></li>
+                        <li><a href="vordaecher.html">Vordächer</a></li>
+                        <li><a href="fassadenverkleidung.html">Fassadenverkleidung</a></li>
+                        <li><a href="metallfassaden.html">Metallfassaden</a></li>
+                        <li><a href="balkon-terrasse.html">Balkon & Terrasse</a></li>
                     </ul>
                 </div>
 
@@ -296,6 +329,50 @@
         </div>
     </footer>
 
+    <!-- Accessibility Widget -->
+    <div class="a11y-widget" id="a11yWidget">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Barrierefreiheit-Einstellungen" aria-expanded="false">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Barrierefreiheit-Einstellungen" aria-hidden="true">
+            <div class="a11y-panel-header">
+                <h3>Barrierefreiheit</h3>
+                <button class="a11y-close" id="a11yClose" aria-label="Schließen"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="a11y-panel-body">
+                <div class="a11y-option">
+                    <span>Schriftgröße</span>
+                    <div class="a11y-font-controls">
+                        <button class="a11y-btn" id="a11yFontDecrease" aria-label="Schrift verkleinern">A-</button>
+                        <button class="a11y-btn" id="a11yFontReset" aria-label="Schrift zurücksetzen">A</button>
+                        <button class="a11y-btn" id="a11yFontIncrease" aria-label="Schrift vergrößern">A+</button>
+                    </div>
+                </div>
+                <div class="a11y-option">
+                    <span>Kontrast</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yContrast" aria-pressed="false">
+                        <i class="fas fa-adjust"></i> Hoher Kontrast
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Links hervorheben</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yLinks" aria-pressed="false">
+                        <i class="fas fa-link"></i> Links unterstreichen
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Animationen</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yMotion" aria-pressed="false">
+                        <i class="fas fa-stop"></i> Animationen stoppen
+                    </button>
+                </div>
+                <button class="a11y-btn a11y-btn-reset" id="a11yResetAll">
+                    <i class="fas fa-undo"></i> Alles zurücksetzen
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- WhatsApp Button -->
     <a href="https://wa.me/4915122142057?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
         <i class="fab fa-whatsapp"></i>
@@ -308,5 +385,23 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/premium.js"></script>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Einstellungen" aria-hidden="true">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>Cookie-Einstellungen</h3>
+                <p>Wir verwenden Cookies und externe Dienste (Google Fonts, Font Awesome), um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn cookie-btn-reject" id="cookieReject">Nur notwendige</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

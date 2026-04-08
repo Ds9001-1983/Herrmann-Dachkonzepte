@@ -9,159 +9,29 @@
 
     <meta property="og:title" content="Unser Team - Herrmann Dachkonzepte">
     <meta property="og:description" content="Qualifizierte Meister und erfahrene Handwerker - das ist unser Team.">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="assets/images/logo.webp">
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.webp">
     <title>Unser Team | Herrmann Dachkonzepte - Meister & Fachkräfte</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .team-intro {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .team-intro p {
-            max-width: 700px;
-            margin: 0 auto;
-            color: var(--color-text-light);
-            font-size: 1.1rem;
-        }
-        .team-section {
-            padding: 4rem 0 6rem;
-            background: var(--color-light);
-        }
-        .team-card {
-            background: var(--color-white);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: all var(--transition-normal);
-        }
-        .team-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        .team-image {
-            aspect-ratio: 1;
-            background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .team-image i {
-            font-size: 5rem;
-            color: rgba(255, 255, 255, 0.2);
-        }
-        .team-image::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
-        }
-        .team-info {
-            padding: 1.5rem;
-            text-align: center;
-        }
-        .team-info h3 {
-            margin-bottom: 0.25rem;
-            font-size: 1.25rem;
-        }
-        .team-info .position {
-            color: var(--color-accent);
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-            display: block;
-        }
-        .team-info .qualification {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            background: var(--color-light);
-            color: var(--color-text-light);
-            font-size: 0.8rem;
-            border-radius: var(--radius-full);
-            margin-bottom: 0.75rem;
-        }
-        .team-info p {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            margin: 0;
-            line-height: 1.6;
-        }
-        .join-section {
-            padding: 5rem 0;
-            background: var(--color-white);
-        }
-        .join-content {
-            display: grid;
-            gap: 3rem;
-            align-items: center;
-        }
-        @media (min-width: 992px) {
-            .join-content {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .join-text h2 {
-            margin-bottom: 1rem;
-        }
-        .join-text p {
-            color: var(--color-text-light);
-            margin-bottom: 1rem;
-        }
-        .benefits-list {
-            margin: 1.5rem 0;
-        }
-        .benefits-list li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.5rem 0;
-        }
-        .benefits-list li i {
-            color: var(--color-accent);
-            font-size: 1.1rem;
-        }
-        .join-image {
-            background: var(--gradient-primary);
-            border-radius: var(--radius-lg);
-            padding: 3rem;
-            text-align: center;
-            color: var(--color-white);
-        }
-        .join-image i {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.8;
-        }
-        .join-image h3 {
-            color: var(--color-white);
-            margin-bottom: 1rem;
-        }
-        .join-image p {
-            opacity: 0.9;
-            margin-bottom: 1.5rem;
-        }
-    </style>
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo">
                 </a>
 
                 <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
@@ -171,14 +41,36 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Startseite</a></li>
                     <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
-                    <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+                    <li class="nav-dropdown">
+                        <a href="leistungen.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Leistungen <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="carport.html" class="nav-link">Carports</a></li>
+                            <li><a href="anbauten.html" class="nav-link">Anbauten</a></li>
+                            <li><a href="vordaecher.html" class="nav-link">Vordächer</a></li>
+                            <li><a href="fassadenverkleidung.html" class="nav-link">Fassadenverkleidung</a></li>
+                            <li><a href="metallfassaden.html" class="nav-link">Metallfassaden</a></li>
+                            <li><a href="balkon-terrasse.html" class="nav-link">Balkon & Terrasse</a></li>
+                            <li><a href="leistungen.html" class="nav-link">Alle Leistungen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projekte.html" class="nav-link">Projekte</a></li>
+                    <li class="nav-dropdown">
+                        <a href="partner.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Partner <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="prefa.html" class="nav-link">PREFA</a></li>
+                            <li><a href="triflex.html" class="nav-link">Triflex</a></li>
+                            <li><a href="creaton.html" class="nav-link">CREATON</a></li>
+                            <li><a href="isocell.html" class="nav-link">ISOCELL</a></li>
+                        </ul>
+                    </li>
                     <li><a href="team.html" class="nav-link active">Team</a></li>
-                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-                    <li><a href="kontakt.html#termin" class="nav-link btn-nav">Termin vereinbaren</a></li>
+                    <li><a href="kontakt.html" class="nav-link btn-nav">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <main id="main-content">
 
     <!-- Page Header -->
     <section class="page-header">
@@ -196,8 +88,12 @@
     <section class="team-intro">
         <div class="container">
             <span class="section-badge">Die Menschen hinter Herrmann Dachkonzepte</span>
-            <h2 class="section-title">Qualifiziert. Erfahren. Engagiert.</h2>
-            <p>Unser Team besteht aus qualifizierten Meistern und erfahrenen Fachkräften, die mit Leidenschaft und Präzision arbeiten. Gemeinsam sorgen wir dafür, dass Ihr Dachprojekt in besten Händen ist.</p>
+            <h2 class="section-title">Aus Freude am Handwerk</h2>
+            <p>Das Team von Herrmann Dachkonzepte stellt sich vor. Qualifizierte Meister, erfahrene Fachkräfte und motivierte Lehrlinge &ndash; gemeinsam sorgen wir dafür, dass Ihr Dachprojekt in besten Händen ist.</p>
+
+            <div class="team-group-photo" data-reveal="up">
+                <img src="assets/images/team/team_group.webp" alt="Das Team von Herrmann Dachkonzepte - Gruppenfoto" loading="lazy">
+            </div>
         </div>
     </section>
 
@@ -205,39 +101,150 @@
     <section class="team-section">
         <div class="container">
             <div class="team-grid">
-                <div class="team-card" data-aos="fade-up">
+                <!-- Markus Herrmann - Geschäftsführer (Featured) -->
+                <div class="team-card team-lead" data-reveal="up">
                     <div class="team-image">
-                        <i class="fas fa-user-tie"></i>
+                        <img src="assets/images/team/markus.webp" alt="Markus Herrmann - Dachdeckermeister und Geschäftsführer" loading="lazy">
+                        <div class="team-image-overlay"></div>
                     </div>
                     <div class="team-info">
-                        <h3>Geschäftsführung</h3>
-                        <span class="position">Inhaber & Dachdeckermeister</span>
+                        <h3>Markus Herrmann</h3>
+                        <span class="position">Dachdeckermeister & Geschäftsführer</span>
                         <span class="qualification">Meisterprüfung Dachdeckerhandwerk</span>
-                        <p>Mit Erfahrung und Leidenschaft führt er das Unternehmen und garantiert höchste Qualität bei jedem Projekt.</p>
+                        <p class="bio">Ein Dach ist nicht nur funktional, ein Dach vollendet ein Bauwerk. Es verleiht ihm Charakter. Die Idee, dass ein Dach in sich Funktion und Form vereint, hat mich immer fasziniert. 2009 habe ich meine Dachdeckerlehre als Geselle beendet, 2014 den Meisterlehrgang. Heute vereinen wir in unserem Portfolio Leistungen aus den Bereichen Dachdeckerei, Zimmerei und Spenglerei. Mir ist es wichtig, Kunden ein ehrliches und qualitätsvolles Handwerk zu bieten.</p>
                     </div>
                 </div>
 
-                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                <!-- Michael - Zimmermeister -->
+                <div class="team-card" data-reveal="up">
                     <div class="team-image">
-                        <i class="fas fa-hard-hat"></i>
+                        <img src="assets/images/team/michael.webp" alt="Michael - Zimmermeister" loading="lazy">
+                        <div class="team-image-overlay"></div>
                     </div>
                     <div class="team-info">
-                        <h3>Zimmermannsmeister</h3>
-                        <span class="position">Leitung Holzrahmenbau</span>
+                        <h3>Michael</h3>
+                        <span class="position">Zimmermeister</span>
                         <span class="qualification">Meisterprüfung Zimmererhandwerk</span>
-                        <p>Unser Zimmermannsmeister ist verantwortlich für alle Holzkonstruktionen und bringt jahrelange Erfahrung mit.</p>
                     </div>
                 </div>
 
-                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                <!-- Felix - Dachdecker -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="100">
                     <div class="team-image">
-                        <i class="fas fa-users"></i>
+                        <img src="assets/images/team/felix.webp" alt="Felix - Dachdecker" loading="lazy">
+                        <div class="team-image-overlay"></div>
                     </div>
                     <div class="team-info">
-                        <h3>Fachkräfte Team</h3>
-                        <span class="position">Dachdecker & Zimmerer</span>
-                        <span class="qualification">Ausgebildete Fachkräfte</span>
-                        <p>Unsere qualifizierten Gesellen arbeiten mit Präzision und Sorgfalt an jedem Projekt – für Ergebnisse, die überzeugen.</p>
+                        <h3>Felix</h3>
+                        <span class="position">Dachdecker</span>
+                    </div>
+                </div>
+
+                <!-- Peter - Dachdecker -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="200">
+                    <div class="team-image">
+                        <img src="assets/images/team/peter.webp" alt="Peter - Dachdecker" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Peter</h3>
+                        <span class="position">Dachdecker</span>
+                    </div>
+                </div>
+
+                <!-- Martin - Facharbeiter -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="300">
+                    <div class="team-image">
+                        <img src="assets/images/team/martin.webp" alt="Martin - Facharbeiter" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Martin</h3>
+                        <span class="position">Facharbeiter</span>
+                    </div>
+                </div>
+
+                <!-- Max - Zimmermann -->
+                <div class="team-card" data-reveal="up">
+                    <div class="team-image">
+                        <img src="assets/images/team/max.webp" alt="Max - Zimmermann" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Max</h3>
+                        <span class="position">Zimmermann</span>
+                    </div>
+                </div>
+
+                <!-- Sandra - Dachdeckerin -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="100">
+                    <div class="team-image">
+                        <img src="assets/images/team/sandra.webp" alt="Sandra - Dachdeckerin" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sandra</h3>
+                        <span class="position">Dachdeckerin</span>
+                    </div>
+                </div>
+
+                <!-- Florian - Facharbeiter -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="200">
+                    <div class="team-image">
+                        <img src="assets/images/team/florian.webp" alt="Florian - Facharbeiter" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Florian</h3>
+                        <span class="position">Facharbeiter</span>
+                    </div>
+                </div>
+
+                <!-- Nils - Zimmermanns-Lehrling -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="300">
+                    <div class="team-image">
+                        <img src="assets/images/team/nils.webp" alt="Nils - Zimmermanns-Lehrling" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Nils</h3>
+                        <span class="position">Zimmermanns-Lehrling</span>
+                    </div>
+                </div>
+
+                <!-- Jannik - Zimmermanns-Lehrling -->
+                <div class="team-card" data-reveal="up">
+                    <div class="team-image">
+                        <img src="assets/images/team/jannik.webp" alt="Jannik - Zimmermanns-Lehrling" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Jannik</h3>
+                        <span class="position">Zimmermanns-Lehrling</span>
+                    </div>
+                </div>
+
+                <!-- Lee-Ann Lisa - Zimmermanns-Lehrling -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="100">
+                    <div class="team-image">
+                        <img src="assets/images/team/lee-ann.webp" alt="Lee-Ann Lisa - Zimmermanns-Lehrling" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lee-Ann Lisa</h3>
+                        <span class="position">Zimmermanns-Lehrling</span>
+                    </div>
+                </div>
+
+                <!-- Marlon - Dachdecker-Lehrling -->
+                <div class="team-card" data-reveal="up" data-reveal-delay="200">
+                    <div class="team-image">
+                        <img src="assets/images/team/marlon.webp" alt="Marlon - Dachdecker-Lehrling" loading="lazy">
+                        <div class="team-image-overlay"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marlon</h3>
+                        <span class="position">Dachdecker-Lehrling</span>
                     </div>
                 </div>
             </div>
@@ -245,34 +252,36 @@
     </section>
 
     <!-- Join Section -->
-    <section class="join-section">
+    <section class="career-section">
         <div class="container">
-            <div class="join-content">
-                <div class="join-text" data-aos="fade-right">
+            <div class="career-grid">
+                <div class="career-text" data-reveal="right">
                     <span class="section-badge">Karriere</span>
                     <h2>Werde Teil unseres Teams!</h2>
                     <p>Du bist Dachdecker, Zimmerer oder möchtest es werden? Wir suchen motivierte Mitarbeiter, die mit uns wachsen wollen. Bei Herrmann Dachkonzepte erwartet dich ein familiäres Arbeitsumfeld, abwechslungsreiche Projekte und faire Konditionen.</p>
 
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Abwechslungsreiche Projekte in der Region</li>
-                        <li><i class="fas fa-check-circle"></i> Familiäres Betriebsklima</li>
-                        <li><i class="fas fa-check-circle"></i> Faire Vergütung</li>
-                        <li><i class="fas fa-check-circle"></i> Moderne Werkzeuge und Ausrüstung</li>
-                        <li><i class="fas fa-check-circle"></i> Weiterbildungsmöglichkeiten</li>
-                        <li><i class="fas fa-check-circle"></i> Kurze Entscheidungswege</li>
-                    </ul>
+                    <div class="career-benefits">
+                        <div class="career-benefit"><i class="fas fa-check"></i> Abwechslungsreiche Projekte in der Region</div>
+                        <div class="career-benefit"><i class="fas fa-check"></i> Familiäres Betriebsklima</div>
+                        <div class="career-benefit"><i class="fas fa-check"></i> Faire Vergütung</div>
+                        <div class="career-benefit"><i class="fas fa-check"></i> Moderne Werkzeuge und Ausrüstung</div>
+                        <div class="career-benefit"><i class="fas fa-check"></i> Weiterbildungsmöglichkeiten</div>
+                        <div class="career-benefit"><i class="fas fa-check"></i> Kurze Entscheidungswege</div>
+                    </div>
 
-                    <a href="kontakt.html" class="btn btn-primary">
+                    <a href="jobs.html" class="btn btn-primary">
                         <i class="fas fa-paper-plane"></i> Jetzt bewerben
                     </a>
                 </div>
 
-                <div class="join-image" data-aos="fade-left">
-                    <i class="fas fa-briefcase"></i>
+                <div class="career-cta-box" data-reveal="left">
                     <h3>Wir suchen Verstärkung!</h3>
                     <p>Dachdecker (m/w/d), Zimmerer (m/w/d), Auszubildende – melde dich bei uns!</p>
-                    <a href="tel:+4915122142057" class="btn btn-white">
+                    <a href="tel:+4915122142057" class="btn btn-primary">
                         <i class="fas fa-phone-alt"></i> Jetzt anrufen
+                    </a>
+                    <a href="jobs.html" class="btn btn-white" style="margin-top: 0.75rem;">
+                        <i class="fas fa-briefcase"></i> Offene Stellen ansehen
                     </a>
                 </div>
             </div>
@@ -299,11 +308,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
                     <p>Profis am Dach und im Holzrahmenbau. Ihr zuverlässiger Partner für Dachdeckerarbeiten und Zimmererarbeiten in Wiehl und Umgebung.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
@@ -321,7 +332,10 @@
                         <li><a href="index.html">Startseite</a></li>
                         <li><a href="ueber-uns.html">Über uns</a></li>
                         <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="projekte.html">Projekte</a></li>
+                        <li><a href="partner.html">Partner</a></li>
                         <li><a href="team.html">Team</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -329,11 +343,12 @@
                 <div class="footer-links">
                     <h4>Leistungen</h4>
                     <ul>
-                        <li><a href="leistungen.html#carport">Carports</a></li>
-                        <li><a href="leistungen.html#anbauten">Anbauten</a></li>
-                        <li><a href="leistungen.html#vordaecher">Vordächer</a></li>
-                        <li><a href="leistungen.html#fassade">Fassadenverkleidung</a></li>
-                        <li><a href="leistungen.html#balkon">Balkon & Terrasse</a></li>
+                        <li><a href="carport.html">Carports</a></li>
+                        <li><a href="anbauten.html">Anbauten</a></li>
+                        <li><a href="vordaecher.html">Vordächer</a></li>
+                        <li><a href="fassadenverkleidung.html">Fassadenverkleidung</a></li>
+                        <li><a href="metallfassaden.html">Metallfassaden</a></li>
+                        <li><a href="balkon-terrasse.html">Balkon & Terrasse</a></li>
                     </ul>
                 </div>
 
@@ -366,6 +381,50 @@
         </div>
     </footer>
 
+    <!-- Accessibility Widget -->
+    <div class="a11y-widget" id="a11yWidget">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Barrierefreiheit-Einstellungen" aria-expanded="false">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Barrierefreiheit-Einstellungen" aria-hidden="true">
+            <div class="a11y-panel-header">
+                <h3>Barrierefreiheit</h3>
+                <button class="a11y-close" id="a11yClose" aria-label="Schließen"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="a11y-panel-body">
+                <div class="a11y-option">
+                    <span>Schriftgröße</span>
+                    <div class="a11y-font-controls">
+                        <button class="a11y-btn" id="a11yFontDecrease" aria-label="Schrift verkleinern">A-</button>
+                        <button class="a11y-btn" id="a11yFontReset" aria-label="Schrift zurücksetzen">A</button>
+                        <button class="a11y-btn" id="a11yFontIncrease" aria-label="Schrift vergrößern">A+</button>
+                    </div>
+                </div>
+                <div class="a11y-option">
+                    <span>Kontrast</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yContrast" aria-pressed="false">
+                        <i class="fas fa-adjust"></i> Hoher Kontrast
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Links hervorheben</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yLinks" aria-pressed="false">
+                        <i class="fas fa-link"></i> Links unterstreichen
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Animationen</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yMotion" aria-pressed="false">
+                        <i class="fas fa-stop"></i> Animationen stoppen
+                    </button>
+                </div>
+                <button class="a11y-btn a11y-btn-reset" id="a11yResetAll">
+                    <i class="fas fa-undo"></i> Alles zurücksetzen
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- WhatsApp Button -->
     <a href="https://wa.me/4915122142057?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
         <i class="fab fa-whatsapp"></i>
@@ -378,5 +437,23 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/premium.js"></script>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Einstellungen" aria-hidden="true">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>Cookie-Einstellungen</h3>
+                <p>Wir verwenden Cookies und externe Dienste (Google Fonts, Font Awesome), um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn cookie-btn-reject" id="cookieReject">Nur notwendige</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

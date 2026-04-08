@@ -13,19 +13,19 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Herrmann Dachkonzepte - Profis am Dach und im Holzrahmenbau">
     <meta property="og:description" content="Ihr zuverlässiger Dachdecker und Zimmermannsmeister in Wiehl. Qualitätsarbeit seit Jahren.">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="assets/images/logo.webp">
     <meta property="og:url" content="https://herrmann-dachkonzepte.de">
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.webp">
 
     <title>Herrmann Dachkonzepte | Dachdecker & Zimmerei in Wiehl - Profis am Dach</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -40,7 +40,7 @@
         "@type": "LocalBusiness",
         "name": "Herrmann Dachkonzepte",
         "alternateName": "Dachdecker Herrmann",
-        "image": "https://herrmann-dachkonzepte.de/assets/images/logo.png",
+        "image": "https://herrmann-dachkonzepte.de/assets/images/logo.webp",
         "url": "https://herrmann-dachkonzepte.de",
         "telephone": "+49 1512 2142057",
         "address": {
@@ -71,12 +71,17 @@
     </script>
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo">
                 </a>
 
                 <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
@@ -86,22 +91,50 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link active">Startseite</a></li>
                     <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
-                    <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+                    <li class="nav-dropdown">
+                        <a href="leistungen.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Leistungen <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="carport.html" class="nav-link">Carports</a></li>
+                            <li><a href="anbauten.html" class="nav-link">Anbauten</a></li>
+                            <li><a href="vordaecher.html" class="nav-link">Vordächer</a></li>
+                            <li><a href="fassadenverkleidung.html" class="nav-link">Fassadenverkleidung</a></li>
+                            <li><a href="metallfassaden.html" class="nav-link">Metallfassaden</a></li>
+                            <li><a href="balkon-terrasse.html" class="nav-link">Balkon & Terrasse</a></li>
+                            <li><a href="leistungen.html" class="nav-link">Alle Leistungen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projekte.html" class="nav-link">Projekte</a></li>
+                    <li class="nav-dropdown">
+                        <a href="partner.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Partner <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="prefa.html" class="nav-link">PREFA</a></li>
+                            <li><a href="triflex.html" class="nav-link">Triflex</a></li>
+                            <li><a href="creaton.html" class="nav-link">CREATON</a></li>
+                            <li><a href="isocell.html" class="nav-link">ISOCELL</a></li>
+                        </ul>
+                    </li>
                     <li><a href="team.html" class="nav-link">Team</a></li>
-                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-                    <li><a href="kontakt.html#termin" class="nav-link btn-nav">Termin vereinbaren</a></li>
+                    <li><a href="kontakt.html" class="nav-link btn-nav">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <main id="main-content">
+
     <!-- Hero Section -->
     <section class="hero" id="hero">
+        <div class="hero-bg">
+            <video autoplay muted loop playsinline poster="assets/images/hero/hero_main.webp">
+                <source src="assets/images/hero/hero_video.mp4" type="video/mp4">
+            </video>
+            <img src="assets/images/hero/hero_main.webp" alt="Herrmann Dachkonzepte - Professionelle Dacharbeiten" fetchpriority="high" class="hero-fallback-img">
+        </div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <span class="hero-badge">Dachdeckermeister & Zimmermannsmeister</span>
-                <h1 class="hero-title">Profis am Dach und im Holzrahmenbau</h1>
+                <h1 class="hero-title">Profis am Dach und im <span class="text-gradient">Holzrahmenbau</span></h1>
                 <p class="hero-subtitle">Ihr zuverlässiger Partner für alle Arbeiten rund ums Dach in Wiehl, Nümbrecht und dem gesamten Oberbergischen Kreis. Qualität, die schützt.</p>
                 <div class="hero-buttons">
                     <a href="kontakt.html" class="btn btn-primary">
@@ -132,32 +165,35 @@
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
+        <div class="hero-divider">
+            <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 60L1440 60L1440 0C1440 0 1080 60 720 60C360 60 0 0 0 0L0 60Z" fill="#f8fafc"/>
+            </svg>
+        </div>
     </section>
 
     <!-- Quick Contact Bar -->
     <section class="quick-contact">
-        <div class="container">
-            <div class="quick-contact-grid">
-                <div class="quick-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <span>Rufen Sie uns an</span>
-                        <a href="tel:+4915122142057">01512 2142057</a>
-                    </div>
+        <div class="quick-contact-grid" data-reveal="up">
+            <div class="quick-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <span>Rufen Sie uns an</span>
+                    <a href="tel:+4915122142057">01512 2142057</a>
                 </div>
-                <div class="quick-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <span>Besuchen Sie uns</span>
-                        <a href="kontakt.html#map">Römerstraße 23, 51674 Wiehl</a>
-                    </div>
+            </div>
+            <div class="quick-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span>Besuchen Sie uns</span>
+                    <a href="kontakt.html#map">Römerstraße 23, 51674 Wiehl</a>
                 </div>
-                <div class="quick-item">
-                    <i class="fas fa-clock"></i>
-                    <div>
-                        <span>Öffnungszeiten</span>
-                        <p>Mo-Fr: 07:00 - 17:00 Uhr</p>
-                    </div>
+            </div>
+            <div class="quick-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <span>Öffnungszeiten</span>
+                    <p>Mo-Fr: 07:00 - 17:00 Uhr</p>
                 </div>
             </div>
         </div>
@@ -166,71 +202,119 @@
     <!-- Services Preview -->
     <section class="services-preview" id="services-preview">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-reveal="up">
                 <span class="section-badge">Unsere Leistungen</span>
                 <h2 class="section-title">Das beste für Ihr Dach</h2>
                 <p class="section-subtitle">Vom kleinen Reparaturauftrag bis zum kompletten Neubau - wir bieten Ihnen das volle Spektrum an Dach- und Zimmererarbeiten.</p>
             </div>
 
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
+                <div class="service-card" data-reveal="up">
+                    <div class="service-card-image">
+                        <img src="assets/images/services/carport.webp" alt="Carport aus Holz" loading="lazy">
                     </div>
-                    <h3>Carports</h3>
-                    <p>Maßgefertigte Carports in höchster Qualität. Schutz für Ihr Fahrzeug mit Stil.</p>
-                    <a href="leistungen.html#carport" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card-body">
+                        <h3>Carports</h3>
+                        <p>Maßgefertigte Carports in höchster Qualität. Schutz für Ihr Fahrzeug mit Stil.</p>
+                        <a href="carport.html" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
+                <div class="service-card" data-reveal="up" data-reveal-delay="100">
+                    <div class="service-card-image">
+                        <img src="assets/images/services/holzbau.webp" alt="Professioneller Anbau in Holzrahmenbauweise" loading="lazy">
                     </div>
-                    <h3>Anbauten</h3>
-                    <p>Professionelle Anbauten für mehr Wohnraum und Lebensqualität.</p>
-                    <a href="leistungen.html#anbauten" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card-body">
+                        <h3>Anbauten</h3>
+                        <p>Professionelle Anbauten für mehr Wohnraum und Lebensqualität.</p>
+                        <a href="anbauten.html" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-umbrella"></i>
+                <div class="service-card" data-reveal="up" data-reveal-delay="200">
+                    <div class="service-card-image">
+                        <img src="assets/images/services/vordach.webp" alt="Elegantes Vordach" loading="lazy">
                     </div>
-                    <h3>Vordächer</h3>
-                    <p>Elegante Vordächer für einen geschützten Eingangsbereich.</p>
-                    <a href="leistungen.html#vordaecher" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card-body">
+                        <h3>Vordächer</h3>
+                        <p>Elegante Vordächer für einen geschützten Eingangsbereich.</p>
+                        <a href="vordaecher.html" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-th-large"></i>
+                <div class="service-card" data-reveal="up" data-reveal-delay="300">
+                    <div class="service-card-image">
+                        <img src="assets/images/services/fassade.webp" alt="Fassadenverkleidung" loading="lazy">
                     </div>
-                    <h3>Fassadenverkleidung</h3>
-                    <p>Moderne Fassadenlösungen für eine ansprechende Optik und bessere Dämmung.</p>
-                    <a href="leistungen.html#fassade" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card-body">
+                        <h3>Fassadenverkleidung</h3>
+                        <p>Moderne Fassadenlösungen für eine ansprechende Optik und bessere Dämmung.</p>
+                        <a href="fassadenverkleidung.html" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
-                        <i class="fas fa-layer-group"></i>
+                <div class="service-card" data-reveal="up" data-reveal-delay="400">
+                    <div class="service-card-image">
+                        <img src="assets/images/services/metallfassade.webp" alt="Metallfassade" loading="lazy">
                     </div>
-                    <h3>Metallfassaden</h3>
-                    <p>Langlebige Metallfassaden für Industrie- und Privatgebäude.</p>
-                    <a href="leistungen.html#metallfassaden" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card-body">
+                        <h3>Metallfassaden</h3>
+                        <p>Langlebige Metallfassaden für Industrie- und Privatgebäude.</p>
+                        <a href="metallfassaden.html" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-icon">
-                        <i class="fas fa-couch"></i>
+                <div class="service-card" data-reveal="up" data-reveal-delay="500">
+                    <div class="service-card-image">
+                        <img src="assets/images/services/balkon_terrasse.webp" alt="Balkon und Terrasse" loading="lazy">
                     </div>
-                    <h3>Balkon & Terrasse</h3>
-                    <p>Traumhafte Balkone und Terrassen für Ihre persönliche Wohlfühloase.</p>
-                    <a href="leistungen.html#balkon" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card-body">
+                        <h3>Balkon & Terrasse</h3>
+                        <p>Traumhafte Balkone und Terrassen für Ihre persönliche Wohlfühloase.</p>
+                        <a href="balkon-terrasse.html" class="service-link">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="services-more">
+            <div class="services-more" data-reveal="up">
                 <p>Weitere Leistungen: <strong>Sturmausbesserung, Dachfenster, Blech- & Dachrinnenarbeiten, Holzrahmenbau</strong></p>
                 <a href="leistungen.html" class="btn btn-outline">Alle Leistungen ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-reveal="up">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Meisterqualität</div>
+                </div>
+                <div class="stat-item" data-reveal="up" data-reveal-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="stat-number">2in1</div>
+                    <div class="stat-label">Dachdecker + Zimmerer</div>
+                </div>
+                <div class="stat-item" data-reveal="up" data-reveal-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="stat-number">Regional</div>
+                    <div class="stat-label">Oberbergischer Kreis</div>
+                </div>
+                <div class="stat-item" data-reveal="up" data-reveal-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="stat-number">Mo-Fr</div>
+                    <div class="stat-label">Schneller Service</div>
+                </div>
             </div>
         </div>
     </section>
@@ -239,7 +323,7 @@
     <section class="why-us">
         <div class="container">
             <div class="why-us-grid">
-                <div class="why-us-content" data-aos="fade-right">
+                <div class="why-us-content" data-reveal="right">
                     <span class="section-badge">Warum Herrmann Dachkonzepte?</span>
                     <h2 class="section-title">Meisterhafte Qualität aus der Region</h2>
                     <p>Als Dachdeckerbetrieb mit eigenem Zimmermannsmeister vereinen wir zwei Gewerke unter einem Dach. Das bedeutet für Sie: Alles aus einer Hand, perfekt aufeinander abgestimmt und in höchster Qualität ausgeführt.</p>
@@ -287,12 +371,9 @@
                     </div>
                 </div>
 
-                <div class="why-us-image" data-aos="fade-left">
+                <div class="why-us-image" data-reveal="left">
                     <div class="image-wrapper">
-                        <div class="image-placeholder">
-                            <i class="fas fa-hard-hat"></i>
-                            <span>Professionelle Arbeit</span>
-                        </div>
+                        <img src="assets/images/downloaded/projekt1.webp" alt="Professionelle Dacharbeiten von Herrmann Dachkonzepte" loading="lazy">
                     </div>
                     <div class="experience-badge">
                         <span class="number">100%</span>
@@ -303,16 +384,84 @@
         </div>
     </section>
 
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <div class="section-header" data-reveal="up">
+                <span class="section-badge">Unsere Projekte</span>
+                <h2 class="section-title">Referenzen die überzeugen</h2>
+                <p class="section-subtitle">Einblicke in unsere abgeschlossenen Projekte im Oberbergischen Kreis.</p>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-item featured" data-reveal="scale">
+                    <img src="assets/images/downloaded/projekt1.webp" alt="Dachprojekt Referenz" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <span>Referenz</span>
+                            <h4>Dachkonstruktion</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal="scale" data-reveal-delay="100">
+                    <img src="assets/images/downloaded/projekt2.webp" alt="Carport Referenz" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <span>Referenz</span>
+                            <h4>Carport</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal="scale" data-reveal-delay="200">
+                    <img src="assets/images/downloaded/projekt3.webp" alt="Fassadenarbeiten Referenz" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <span>Referenz</span>
+                            <h4>Fassadenarbeiten</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal="scale" data-reveal-delay="100">
+                    <img src="assets/images/downloaded/projekt4.webp" alt="Holzrahmenbau Referenz" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <span>Referenz</span>
+                            <h4>Holzrahmenbau</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal="scale" data-reveal-delay="200">
+                    <img src="assets/images/downloaded/projekt5.webp" alt="Dachsanierung Referenz" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <span>Referenz</span>
+                            <h4>Dachsanierung</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal="scale" data-reveal-delay="300">
+                    <img src="assets/images/downloaded/projekt6.webp" alt="Anbau Referenz" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <span>Referenz</span>
+                            <h4>Anbau</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Service Area -->
     <section class="service-area">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-reveal="up">
                 <span class="section-badge">Unser Einzugsgebiet</span>
                 <h2 class="section-title">Wir sind für Sie da</h2>
                 <p class="section-subtitle">Von Wiehl aus bedienen wir den gesamten Oberbergischen Kreis und die umliegenden Regionen.</p>
             </div>
 
-            <div class="area-tags">
+            <div class="area-tags" data-reveal="up">
                 <span class="area-tag highlight">Wiehl</span>
                 <span class="area-tag highlight">Nümbrecht</span>
                 <span class="area-tag">Gummersbach</span>
@@ -330,9 +479,12 @@
 
     <!-- CTA Section -->
     <section class="cta">
+        <div class="cta-bg">
+            <img src="assets/images/hero/hero_main.webp" alt="" loading="lazy">
+        </div>
         <div class="cta-overlay"></div>
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content" data-reveal="up">
                 <h2>Ihr Dach in besten Händen</h2>
                 <p>Egal ob Neubau, Sanierung oder Reparatur - wir sind Ihr kompetenter Partner. Kontaktieren Sie uns für eine unverbindliche Beratung.</p>
                 <div class="cta-buttons">
@@ -348,11 +500,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
                     <p>Profis am Dach und im Holzrahmenbau. Ihr zuverlässiger Partner für Dachdeckerarbeiten und Zimmererarbeiten in Wiehl und Umgebung.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
@@ -370,7 +524,10 @@
                         <li><a href="index.html">Startseite</a></li>
                         <li><a href="ueber-uns.html">Über uns</a></li>
                         <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="projekte.html">Projekte</a></li>
+                        <li><a href="partner.html">Partner</a></li>
                         <li><a href="team.html">Team</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -378,11 +535,12 @@
                 <div class="footer-links">
                     <h4>Leistungen</h4>
                     <ul>
-                        <li><a href="leistungen.html#carport">Carports</a></li>
-                        <li><a href="leistungen.html#anbauten">Anbauten</a></li>
-                        <li><a href="leistungen.html#vordaecher">Vordächer</a></li>
-                        <li><a href="leistungen.html#fassade">Fassadenverkleidung</a></li>
-                        <li><a href="leistungen.html#balkon">Balkon & Terrasse</a></li>
+                        <li><a href="carport.html">Carports</a></li>
+                        <li><a href="anbauten.html">Anbauten</a></li>
+                        <li><a href="vordaecher.html">Vordächer</a></li>
+                        <li><a href="fassadenverkleidung.html">Fassadenverkleidung</a></li>
+                        <li><a href="metallfassaden.html">Metallfassaden</a></li>
+                        <li><a href="balkon-terrasse.html">Balkon & Terrasse</a></li>
                     </ul>
                 </div>
 
@@ -415,6 +573,61 @@
         </div>
     </footer>
 
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Schließen">&times;</button>
+        <button class="lightbox-prev" aria-label="Vorheriges Bild"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" aria-label="Nächstes Bild"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="">
+        </div>
+        <div class="lightbox-counter"></div>
+    </div>
+
+    <!-- Accessibility Widget -->
+    <div class="a11y-widget" id="a11yWidget">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Barrierefreiheit-Einstellungen" aria-expanded="false">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Barrierefreiheit-Einstellungen" aria-hidden="true">
+            <div class="a11y-panel-header">
+                <h3>Barrierefreiheit</h3>
+                <button class="a11y-close" id="a11yClose" aria-label="Schließen"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="a11y-panel-body">
+                <div class="a11y-option">
+                    <span>Schriftgröße</span>
+                    <div class="a11y-font-controls">
+                        <button class="a11y-btn" id="a11yFontDecrease" aria-label="Schrift verkleinern">A-</button>
+                        <button class="a11y-btn" id="a11yFontReset" aria-label="Schrift zurücksetzen">A</button>
+                        <button class="a11y-btn" id="a11yFontIncrease" aria-label="Schrift vergrößern">A+</button>
+                    </div>
+                </div>
+                <div class="a11y-option">
+                    <span>Kontrast</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yContrast" aria-pressed="false">
+                        <i class="fas fa-adjust"></i> Hoher Kontrast
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Links hervorheben</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yLinks" aria-pressed="false">
+                        <i class="fas fa-link"></i> Links unterstreichen
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Animationen</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yMotion" aria-pressed="false">
+                        <i class="fas fa-stop"></i> Animationen stoppen
+                    </button>
+                </div>
+                <button class="a11y-btn a11y-btn-reset" id="a11yResetAll">
+                    <i class="fas fa-undo"></i> Alles zurücksetzen
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- WhatsApp Button -->
     <a href="https://wa.me/4915122142057?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
         <i class="fab fa-whatsapp"></i>
@@ -428,5 +641,29 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+
+    <!-- Premium: Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <!-- Premium: GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Premium Enhancements -->
+    <script src="js/premium.js"></script>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Einstellungen" aria-hidden="true">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>Cookie-Einstellungen</h3>
+                <p>Wir verwenden Cookies und externe Dienste (Google Fonts, Font Awesome), um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn cookie-btn-reject" id="cookieReject">Nur notwendige</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

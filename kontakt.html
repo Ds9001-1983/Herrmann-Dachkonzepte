@@ -9,200 +9,29 @@
 
     <meta property="og:title" content="Kontakt - Herrmann Dachkonzepte">
     <meta property="og:description" content="Kontaktieren Sie uns für eine kostenlose Beratung. Wir sind für Sie da!">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="assets/images/logo.webp">
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.webp">
     <title>Kontakt | Herrmann Dachkonzepte - Beratung & Terminvereinbarung</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .contact-section {
-            padding: 5rem 0;
-        }
-        .contact-grid {
-            display: grid;
-            gap: 3rem;
-        }
-        @media (min-width: 992px) {
-            .contact-grid {
-                grid-template-columns: 1fr 1.2fr;
-            }
-        }
-        .contact-info-card {
-            background: var(--gradient-primary);
-            color: var(--color-white);
-            padding: 2.5rem;
-            border-radius: var(--radius-lg);
-            height: fit-content;
-        }
-        .contact-info-card h2 {
-            color: var(--color-white);
-            margin-bottom: 1rem;
-        }
-        .contact-info-card > p {
-            opacity: 0.9;
-            margin-bottom: 2rem;
-        }
-        .contact-details {
-            margin-bottom: 2rem;
-        }
-        .contact-detail {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        .contact-detail i {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-        .contact-detail-text h4 {
-            color: var(--color-white);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.25rem;
-            opacity: 0.8;
-        }
-        .contact-detail-text p,
-        .contact-detail-text a {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: var(--color-white);
-            margin: 0;
-        }
-        .contact-detail-text a:hover {
-            color: var(--color-accent);
-        }
-        .contact-hours {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            margin-bottom: 2rem;
-        }
-        .contact-hours h4 {
-            color: var(--color-white);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .hours-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .hours-row:last-child {
-            border-bottom: none;
-        }
-        .hours-row span:first-child {
-            opacity: 0.8;
-        }
-        .contact-social {
-            display: flex;
-            gap: 1rem;
-        }
-        .contact-social a {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-full);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            transition: all var(--transition-fast);
-        }
-        .contact-social a:hover {
-            background: var(--color-accent);
-            transform: translateY(-3px);
-        }
-        .contact-form {
-            background: var(--color-white);
-            padding: 2.5rem;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-md);
-        }
-        .contact-form h2 {
-            margin-bottom: 0.5rem;
-        }
-        .contact-form > p {
-            color: var(--color-text-light);
-            margin-bottom: 2rem;
-        }
-        .form-row {
-            display: grid;
-            gap: 1rem;
-        }
-        @media (min-width: 576px) {
-            .form-row {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        .map-section {
-            padding: 0 0 5rem;
-        }
-        .map-container {
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-        }
-        .map-container iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
-        }
-        .emergency-section {
-            background: var(--color-light);
-            padding: 4rem 0;
-        }
-        .emergency-box {
-            background: linear-gradient(135deg, #dc3545 0%, #a71d2a 100%);
-            color: var(--color-white);
-            padding: 3rem;
-            border-radius: var(--radius-lg);
-            text-align: center;
-        }
-        .emergency-box i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .emergency-box h2 {
-            color: var(--color-white);
-            margin-bottom: 1rem;
-        }
-        .emergency-box p {
-            opacity: 0.9;
-            margin-bottom: 1.5rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .emergency-box .btn {
-            font-size: 1.1rem;
-            padding: 1rem 2rem;
-        }
-    </style>
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo">
                 </a>
 
                 <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
@@ -212,14 +41,36 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Startseite</a></li>
                     <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
-                    <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+                    <li class="nav-dropdown">
+                        <a href="leistungen.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Leistungen <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="carport.html" class="nav-link">Carports</a></li>
+                            <li><a href="anbauten.html" class="nav-link">Anbauten</a></li>
+                            <li><a href="vordaecher.html" class="nav-link">Vordächer</a></li>
+                            <li><a href="fassadenverkleidung.html" class="nav-link">Fassadenverkleidung</a></li>
+                            <li><a href="metallfassaden.html" class="nav-link">Metallfassaden</a></li>
+                            <li><a href="balkon-terrasse.html" class="nav-link">Balkon & Terrasse</a></li>
+                            <li><a href="leistungen.html" class="nav-link">Alle Leistungen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projekte.html" class="nav-link">Projekte</a></li>
+                    <li class="nav-dropdown">
+                        <a href="partner.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Partner <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="prefa.html" class="nav-link">PREFA</a></li>
+                            <li><a href="triflex.html" class="nav-link">Triflex</a></li>
+                            <li><a href="creaton.html" class="nav-link">CREATON</a></li>
+                            <li><a href="isocell.html" class="nav-link">ISOCELL</a></li>
+                        </ul>
+                    </li>
                     <li><a href="team.html" class="nav-link">Team</a></li>
-                    <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
-                    <li><a href="kontakt.html#termin" class="nav-link btn-nav">Termin vereinbaren</a></li>
+                    <li><a href="kontakt.html" class="nav-link active btn-nav">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <main id="main-content">
 
     <!-- Page Header -->
     <section class="page-header">
@@ -238,31 +89,31 @@
         <div class="container">
             <div class="contact-grid">
                 <!-- Contact Info -->
-                <div class="contact-info-card" data-aos="fade-right">
+                <div class="contact-info-card" data-reveal="right">
                     <h2>Sprechen Sie mit uns</h2>
                     <p>Wir freuen uns auf Ihre Anfrage! Kontaktieren Sie uns telefonisch, per E-Mail oder nutzen Sie unser Kontaktformular.</p>
 
                     <div class="contact-details">
                         <div class="contact-detail">
-                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
                             <div class="contact-detail-text">
-                                <h4>Telefon</h4>
+                                <span>Telefon</span>
                                 <a href="tel:+4915122142057">01512 2142057</a>
                             </div>
                         </div>
 
                         <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
+                            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
                             <div class="contact-detail-text">
-                                <h4>E-Mail</h4>
+                                <span>E-Mail</span>
                                 <a href="mailto:info@herrmann-dachkonzepte.de">info@herrmann-dachkonzepte.de</a>
                             </div>
                         </div>
 
                         <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="contact-detail-text">
-                                <h4>Adresse</h4>
+                                <span>Adresse</span>
                                 <p>Römerstraße 23<br>51674 Wiehl-Hübender</p>
                             </div>
                         </div>
@@ -270,18 +121,11 @@
 
                     <div class="contact-hours">
                         <h4><i class="fas fa-clock"></i> Öffnungszeiten</h4>
-                        <div class="hours-row">
-                            <span>Montag - Freitag</span>
-                            <span>07:00 - 17:00 Uhr</span>
-                        </div>
-                        <div class="hours-row">
-                            <span>Samstag</span>
-                            <span>Nach Vereinbarung</span>
-                        </div>
-                        <div class="hours-row">
-                            <span>Sonntag</span>
-                            <span>Geschlossen</span>
-                        </div>
+                        <ul class="hours-list">
+                            <li><span>Montag - Freitag</span><span>07:00 - 17:00 Uhr</span></li>
+                            <li><span>Samstag</span><span>Nach Vereinbarung</span></li>
+                            <li><span>Sonntag</span><span>Geschlossen</span></li>
+                        </ul>
                     </div>
 
                     <div class="contact-social">
@@ -298,7 +142,7 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form" data-aos="fade-left">
+                <div class="contact-form" data-reveal="left">
                     <h2>Nachricht senden</h2>
                     <p>Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
 
@@ -376,11 +220,13 @@
     <!-- Emergency Section -->
     <section class="emergency-section">
         <div class="container">
-            <div class="emergency-box" data-aos="fade-up">
-                <i class="fas fa-exclamation-triangle"></i>
+            <div class="emergency-content" data-reveal="up">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
                 <h2>Sturmschaden? Dach undicht?</h2>
                 <p>Bei dringenden Notfällen sind wir für Sie da! Rufen Sie uns an und wir kümmern uns schnellstmöglich um Ihr Problem.</p>
-                <a href="tel:+4915122142057" class="btn btn-white">
+                <a href="tel:+4915122142057" class="btn">
                     <i class="fas fa-phone-alt"></i> Notfall-Hotline: 01512 2142057
                 </a>
             </div>
@@ -388,11 +234,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
+                    <img src="assets/images/logo.webp" alt="Herrmann Dachkonzepte Logo" class="footer-logo">
                     <p>Profis am Dach und im Holzrahmenbau. Ihr zuverlässiger Partner für Dachdeckerarbeiten und Zimmererarbeiten in Wiehl und Umgebung.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/herrmanndachkonzepte" target="_blank" rel="noopener" aria-label="Facebook">
@@ -410,7 +258,10 @@
                         <li><a href="index.html">Startseite</a></li>
                         <li><a href="ueber-uns.html">Über uns</a></li>
                         <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="projekte.html">Projekte</a></li>
+                        <li><a href="partner.html">Partner</a></li>
                         <li><a href="team.html">Team</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -418,11 +269,12 @@
                 <div class="footer-links">
                     <h4>Leistungen</h4>
                     <ul>
-                        <li><a href="leistungen.html#carport">Carports</a></li>
-                        <li><a href="leistungen.html#anbauten">Anbauten</a></li>
-                        <li><a href="leistungen.html#vordaecher">Vordächer</a></li>
-                        <li><a href="leistungen.html#fassade">Fassadenverkleidung</a></li>
-                        <li><a href="leistungen.html#balkon">Balkon & Terrasse</a></li>
+                        <li><a href="carport.html">Carports</a></li>
+                        <li><a href="anbauten.html">Anbauten</a></li>
+                        <li><a href="vordaecher.html">Vordächer</a></li>
+                        <li><a href="fassadenverkleidung.html">Fassadenverkleidung</a></li>
+                        <li><a href="metallfassaden.html">Metallfassaden</a></li>
+                        <li><a href="balkon-terrasse.html">Balkon & Terrasse</a></li>
                     </ul>
                 </div>
 
@@ -455,6 +307,50 @@
         </div>
     </footer>
 
+    <!-- Accessibility Widget -->
+    <div class="a11y-widget" id="a11yWidget">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Barrierefreiheit-Einstellungen" aria-expanded="false">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Barrierefreiheit-Einstellungen" aria-hidden="true">
+            <div class="a11y-panel-header">
+                <h3>Barrierefreiheit</h3>
+                <button class="a11y-close" id="a11yClose" aria-label="Schließen"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="a11y-panel-body">
+                <div class="a11y-option">
+                    <span>Schriftgröße</span>
+                    <div class="a11y-font-controls">
+                        <button class="a11y-btn" id="a11yFontDecrease" aria-label="Schrift verkleinern">A-</button>
+                        <button class="a11y-btn" id="a11yFontReset" aria-label="Schrift zurücksetzen">A</button>
+                        <button class="a11y-btn" id="a11yFontIncrease" aria-label="Schrift vergrößern">A+</button>
+                    </div>
+                </div>
+                <div class="a11y-option">
+                    <span>Kontrast</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yContrast" aria-pressed="false">
+                        <i class="fas fa-adjust"></i> Hoher Kontrast
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Links hervorheben</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yLinks" aria-pressed="false">
+                        <i class="fas fa-link"></i> Links unterstreichen
+                    </button>
+                </div>
+                <div class="a11y-option">
+                    <span>Animationen</span>
+                    <button class="a11y-btn a11y-btn-full" id="a11yMotion" aria-pressed="false">
+                        <i class="fas fa-stop"></i> Animationen stoppen
+                    </button>
+                </div>
+                <button class="a11y-btn a11y-btn-reset" id="a11yResetAll">
+                    <i class="fas fa-undo"></i> Alles zurücksetzen
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- WhatsApp Button -->
     <a href="https://wa.me/4915122142057?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
         <i class="fab fa-whatsapp"></i>
@@ -467,5 +363,23 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/premium.js"></script>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Einstellungen" aria-hidden="true">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>Cookie-Einstellungen</h3>
+                <p>Wir verwenden Cookies und externe Dienste (Google Fonts, Font Awesome), um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn cookie-btn-reject" id="cookieReject">Nur notwendige</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
